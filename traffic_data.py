@@ -16,10 +16,10 @@ INTERVAL = # Integer number of minutes between cycles in which travel data
            # should be collected
 DURATION = # Integer number of minutes until this program terminates 
 
-HOME_ADDRESSES = [
+START_ADDRESSES = [
         # Insert start addresses as strings separated by commas
         ]
-WORK_ADDRESSES = [
+END_ADDRESSES = [
         # Insert end addresses as strings separated by commas 
         ]
 GOOGLE_MAPS_API_KEY = # String. Visit: https://cloud.google.com/maps-platform/  
@@ -48,7 +48,7 @@ def get_info(reverse=False):
         reverse=False : Set True to evaluate trip from work to home
     '''
     now = datetime.now().ctime()
-    df = pd.DataFrame(index=HOME_ADDRESSES, columns=WORK_ADDRESSES)
+    df = pd.DataFrame(index=START_ADDRESSES, columns=END_ADDRESSES)
     if not reverse:
         print()
         print('Home to work ==========')
