@@ -18,7 +18,7 @@ For instance, if you'd like the program to collect data in 20 minutes
 intervals, type `20`.
 - **DURATION**: Input an integer number of minutes the program should run. 
 If you'd like for it to run for an entire day - or longer - you can input an 
-equation using valid Python syntax such as `60 * 24 # 60 mins * 24 hours`
+equation using valid Python syntax such as `60 * 24`
 *Don't forget order of operations when doing this*
 - **START_ADDRESSES**: This is simply a list of start addresses as strings. 
 This program uses Google Map's API so anything you would typically type into 
@@ -43,7 +43,7 @@ START_ADDRESSES = [
 	 ]
 
 END_ADDRESSES = [
-    '1400 Suite 600 Address Street Los Angelos',
+    '1400 Suite 600 Address Street Los Angeles',
     'Statue of Liberty',
     '42 Python Ave SoftwareLand, WA'
 	 ]
