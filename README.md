@@ -12,7 +12,7 @@ from different cities.
 
 ## How-To
 
-Using a test editor, modify these variables:
+Using a text editor, modify these variables:
 - **INTERVAL**: Input an integer number of minutes between cycles.
 For instance, if you'd like the program to collect data in 20 minutes 
 intervals, type `20`.
